@@ -127,8 +127,8 @@ a {
 }
 
 .hero-photo img {
-  width: auto;
-  height: auto;
+  width: 280px;
+  height: 280px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 12px 32px rgba(28,43,57,0.18);
