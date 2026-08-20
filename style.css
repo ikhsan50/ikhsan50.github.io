@@ -1,0 +1,266 @@
+:root {
+  --cream: #F5F1E8;
+  --navy: #1C2B39;
+  --green: #3C5A47;
+  --gold: #B8925A;
+  --text-muted: #5A6570;
+  --white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  background: var(--cream);
+  color: var(--navy);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Nav */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 6%;
+  border-bottom: 1px solid rgba(28,43,57,0.1);
+}
+
+.nav-name {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.nav nav a {
+  margin-left: 28px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.nav nav a:hover {
+  color: var(--green);
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 80px 6%;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 560px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero-sub {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+}
+
+.hero-links {
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  padding: 12px 26px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--green);
+}
+
+.btn-outline {
+  border: 1.5px solid var(--navy);
+  color: var(--navy);
+}
+
+.btn-outline:hover {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.hero-photo img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgba(28,43,57,0.18);
+}
+
+/* About */
+.about {
+  padding: 60px 6%;
+  max-width: 800px;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.about p {
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  background: var(--white);
+  border: 1px solid rgba(28,43,57,0.12);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--green);
+}
+
+/* Projects */
+.projects {
+  padding: 60px 6%;
+  background: var(--white);
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 36px;
+}
+
+.project {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 56px;
+  flex-wrap: wrap;
+}
+
+.project:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.project img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(28,43,57,0.12);
+  flex: 1 1 400px;
+}
+
+.project-text {
+  flex: 1 1 300px;
+}
+
+.project-text h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: var(--navy);
+}
+
+.project-text p {
+  color: var(--text-muted);
+}
+
+/* Contact */
+.contact {
+  padding: 70px 6%;
+  text-align: center;
+  background: var(--navy);
+  color: var(--cream);
+}
+
+.contact h2 {
+  color: var(--white);
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.contact p {
+  color: rgba(245,241,232,0.75);
+  margin-bottom: 24px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.contact-links a {
+  font-weight: 600;
+  color: var(--gold);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.contact-links a:hover {
+  border-color: var(--gold);
+}
+
+.footer-note {
+  font-size: 0.85rem;
+  color: rgba(245,241,232,0.5);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .nav nav a {
+    margin: 0 12px;
+  }
+}
