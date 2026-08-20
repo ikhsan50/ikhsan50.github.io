@@ -61,8 +61,8 @@ a {
 .hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: center;
+  gap: 20px;
   padding: 80px 6%;
   flex-wrap: wrap;
 }
